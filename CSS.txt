@@ -1,0 +1,63 @@
+@import url(sanitize.css);
+
+width: 600px;
+max-width: 800px; /* 最大幅を 800px に */
+width: 50%; /* 要素の幅を 50% に */
+margin: 10px auto;
+margin-bottom: 3em;
+padding: 30px;
+
+border: 1px solid #d1d1d1;
+border-bottom: 1px solid #d1d1d1;
+border-radius: 3px;
+box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+
+background-color: #fafafa;
+color: #f33; /* 文字の色を#f33 に */
+
+font-size: 1.2em;
+font-weight: bold;
+
+text-align: center; /* テキストを中央揃えに */
+
+border-radius: 3px;
+box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+
+display: block;
+display: inline; /* インラインスタイルに変更 */
+
+float: left;
+clear: left;
+
+transition: opacity 1s ease 0s;
+
+.description img:hover {
+    opacity: .5;
+}
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+@media only screen and (max-width:600px){
+    .description img {
+        float: none; /* 回り込みを解除する */
+        display: block; /* 表示をブロック状態にする */
+        margin: 0 auto; /* 画像を中央に揃える */
+    }
+    header {
+        padding: 5px; /* 要素内余白を少し狭くする */
+    }
+    header h1 {
+        font-size: 12px; /* 文字サイズを少し小さくする */
+    }
+    .description h1 {
+        font-size: 14px; /* 文字サイズを少し小さくする */
+    }
+    .songs li {
+        float: none; /* 回り込みを解除する */
+        width: inherit; /* 幅を元に戻す */
+    }
+}
